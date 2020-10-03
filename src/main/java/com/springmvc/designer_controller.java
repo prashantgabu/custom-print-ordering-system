@@ -105,7 +105,7 @@ public class designer_controller {
 			message.setContent("Your password is " + password, "text/html");
 
 			Transport tr = s.getTransport("smtp");
-			tr.connect("smtp.gmail.com", "heydoctorinfo@gmail.com", "pristineitis53");
+			tr.connect("smtp.gmail.com", "", "");
 			message.saveChanges();
 			tr.sendMessage(message, message.getAllRecipients());
 			tr.close();
@@ -254,7 +254,7 @@ public class designer_controller {
 			message.setContent("Your password is " + pwd, "text/html");
 
 			Transport tr = s.getTransport("smtp");
-			tr.connect("smtp.gmail.com", "heydoctorinfo@gmail.com", "pristineitis53");
+			tr.connect("smtp.gmail.com", "", "");
 			message.saveChanges();
 			tr.sendMessage(message, message.getAllRecipients());
 			tr.close();
